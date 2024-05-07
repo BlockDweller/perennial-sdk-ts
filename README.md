@@ -33,13 +33,13 @@ yarn add perennial-sdk-ts
 You can check out the various examples of how to use this code base in the `/examples` folder. To run these examples use the following command:
 
 ```bash
-  npx esno ./examples/fetchMakerData.ts
+  npx esno ./examples/onchain/fetchFormatMakerData.ts
 ```
 
 If you need to add `env` varibles you can front load them like this:
 
 ```bash
-ALCHEMY_URL=<url_goes_here> npx esno ./examples/fetchMakerData.ts
+ALCHEMY_URL=<url_goes_here> npx esno ./examples/onchain/fetchFormatMakerData.ts
 ```
 
 ## To Do:
