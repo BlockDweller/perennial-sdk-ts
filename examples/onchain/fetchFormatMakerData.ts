@@ -22,6 +22,9 @@ import {
 const AlchemyURL = process.env.ALCHEMY_URL;
 if (!AlchemyURL) throw new Error("Missing alchemy key configuration");
 
+// User Address
+const user = process.env.USER_ADDRESS;
+
 /// Fetch Maker Data
 async function main(
   url: string,
@@ -143,4 +146,4 @@ async function main(
   return { user: userAddress, chain: chainID, data };
 }
 
-main(AlchemyURL, zeroAddress, ["eth", "btc", "sol"]);
+main(AlchemyURL, user ? user : zeroAddress, ["eth", "btc", "sol"]);
