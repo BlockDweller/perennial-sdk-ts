@@ -36,11 +36,18 @@ You can check out the various examples of how to use this code base in the `/exa
   npx esno ./examples/onchain/fetchFormatMakerData.ts
 ```
 
-If you need to add `env` varibles you can front load them like this:
+If you need to add `env` variables you can front load them like this:
 
 ```bash
 ALCHEMY_URL=<url_goes_here> npx esno ./examples/onchain/fetchFormatMakerData.ts
 ```
+
+To fetch Maker position data for a specific user, define an `env` variable called `USER_ADDRESS` or front load as shown above
+
+```bash
+export USER_ADDRESS=<your_address_goes_here>
+```
+
 
 ## To Do:
 
